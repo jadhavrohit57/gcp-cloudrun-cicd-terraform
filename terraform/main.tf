@@ -54,3 +54,12 @@ resource "google_cloud_run_service_iam_member" "run_all_users" {
 output "service_url" {
   value = google_cloud_run_service.run_service.status[0].url
 }
+
+# IF using ARTIFACT REGISTRY instead of CONTAINER REGISTRY 
+# Create an Artifactory repository
+resource "google_artifact_registry_repository" "artifactory_repository" {
+  project       = "PROJECT_ID"
+  location      = "asia-south1"
+  repository_id = "docker-artifact-regsitry"
+  format        = "DOCKER"
+}

@@ -17,7 +17,7 @@ jobs:
       PROJECT_ID: ${{ secrets.PROJECT_ID }}
       SERVICE_NAME: ${{ secrets.SERVICE_NAME }}
       REGION: asia-south1
-      REPOSITORY: test-app-repo
+      REPOSITORY: docker-artifact-regsitry
       IMAGE: main
 
     steps:
