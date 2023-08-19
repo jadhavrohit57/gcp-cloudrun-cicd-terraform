@@ -45,7 +45,7 @@ jobs:
           docker build -t "$REGION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/$IMAGE:$GITHUB_SHA" .
 
       - name: Authenticating docker with gcloud
-        run: gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://gcr.io
+        run: gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin "https://$REGION-docker.pkg.dev"
 
       # Push image to Google Container Registry
       - name: Push api image to Google Container Registry
