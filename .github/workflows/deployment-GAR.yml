@@ -1,5 +1,3 @@
-# reference:
-# https://medium.com/mistergreen-engineering/uploading-a-docker-image-to-gcr-using-github-actions-92e1cdf14811
 
 name: GCP deployment dev
 
