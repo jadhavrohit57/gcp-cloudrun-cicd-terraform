@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "keywords": [
+    "terraform",
+    "GCP",
+    "artifact registry",
+    "container registry",
+    "docker",
+    "cicd"
+  ],
   "scripts": {
     "start": "node index"
   },
