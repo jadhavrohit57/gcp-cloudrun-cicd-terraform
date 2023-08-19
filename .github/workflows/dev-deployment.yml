@@ -3,11 +3,11 @@
 
 name: GCP deployment dev
 
-# on: workflow_dispatch
-# on:
-#   push:
-#     branches:
-#       - "main"
+on: workflow_dispatch
+on:
+  push:
+    branches:
+      - "main"
 
 jobs:
   gcp-dev-deployment:
