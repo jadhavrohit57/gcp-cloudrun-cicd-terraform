@@ -1,10 +1,10 @@
 
 name: GCP deployment dev
 
-# on:
-#   push:
-#     branches:
-#       - "main"
+on:
+  push:
+    branches:
+      - "main"
 
 jobs:
   gcp-dev-deployment:
@@ -26,7 +26,7 @@ jobs:
       - name: "Autheticate with Google"
         uses: "google-github-actions/auth@v1"
         with:
-          credentials_json: "${{ secrets.GCR_DEVOPS_SERVICE_ACCOUNT_KEY }}"
+          credentials_json: "${{ secrets.SERVICE_ACCOUNT_KEY }}"
 
       # Setup gcloud CLI
       - name: Set up Cloud SDK
