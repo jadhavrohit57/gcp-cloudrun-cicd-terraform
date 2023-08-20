@@ -4,3 +4,4 @@ testScripts
 keys
 .terraform*
 terraform.*
+test*
