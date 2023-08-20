@@ -35,7 +35,7 @@ jobs:
       # Configure docker to use the gcloud command-line tool as a credential helper
       - name: Configure Docker
         run: |
-          gcloud auth configure-docker "$REGION-docker.pkg.dev"
+          gcloud auth configure-docker -q
 
       # Build docker image
       - name: Build docker image for api
